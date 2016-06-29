@@ -48,7 +48,7 @@
 
 		<div class = "contant">
 			<div class ="tips">
-			身份证:
+			*身份证:
 			</div>
 			<input type="text" placeholder="身份证" ><br>
 		</div>
@@ -62,16 +62,30 @@
 
 		<div class = "contant">
 			<div class ="tips">
-			电话:
+			移动电话:
 			</div>
 			<input type="text" placeholder="电话" ><br>
 		</div>
+		
+		<div class = "contant">
+			<div class ="tips">
+			座机:
+			</div>
+			<input type="text" placeholder="座机" ><br>
+		</div>	
 
 		<div class = "contant">
 			<div class ="tips">
 			地址:
 			</div>
 			<input type="text" placeholder="地址" ><br>
+		</div>
+		
+		<div class = "contant">
+			<div class ="tips">
+			邮编:
+			</div>
+			<input type="text" placeholder="邮编" ><br>
 		</div>
 
 		<div class = "contant">
@@ -80,7 +94,28 @@
 			</div>
 			<input type="text" placeholder="E-mail" ><br>
 		</div>
-	
+
+		<div class = "contant">
+			<div class ="tips">
+			客户送机时间:
+			</div>
+			<input type="text" placeholder="客户送机时间" ><br>
+		</div>
+
+		<div class = "contant">
+			<div class ="tips">
+			客户性质:
+			</div>
+			<select>
+				<option value ="volvo"></option>
+				<option value ="volvo">家庭用户</option>
+				<option value ="saab">单位用户</option>
+  				<option value="opel">代理商</option>
+ 				<option value="audi">签约用户</option>
+			</select>
+			<br>
+		</div>
+
 	    <div class = "contant">
 			<div class ="tips">
 			</div>

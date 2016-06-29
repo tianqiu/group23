@@ -22,3 +22,12 @@ select{
 option p{
     text-align: center;
 }
+
+.info{
+     margin-left: 30%;
+    margin-right: 30%;
+    float: left;
+    width:40%;
+    height: auto;
+    background-color: white;
+}
