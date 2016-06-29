@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>维修管理</title>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="js/layer.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/layer.css"/>
 	<link rel="stylesheet" type="text/css" href="css/plug.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -41,13 +42,19 @@
 
 <div class="repair" id="repair">
 	<div class="repairblock">
+	<div class="repairstat" style="color:red;padding-left:40px">维修编号</div>
+    <div class="repairstat" style="color:red;margin-left:88px"><p>维修状态</p></div>
+	</div>
+</div>
+<div class="repair" id="repair">
+	<div class="repairblock">
 	<div class="repairnum">01</div>
     <div class="repairstat"><p>未分配</p></div>
 	</div>
     <div class="repairbuttons">
-    <button class = "allot" type="submit" >分配</button>
-	<button class = "check" type="submit" >检测</button>
-	<button class = "cal" type="submit" >结算</button>
+    <button class = "allot" type="submit" onclick="click1()">分配</button>
+	<button class = "check" type="submit" onclick="click2()">检测</button>
+	<button class = "cal" type="submit" onclick="click3()">结算</button>
 	</div>
 </div>
 <div class="repair" id="repair">
@@ -105,6 +112,21 @@
 </html>
 
 <script>
+function click1() {
+layer.msg('分配给谁？', {
+  time: 0 //不自动关闭
+  ,icon:1
+  ,btn: ['取消','技工1', '技工2', '技工3', '技工4', '技工5']
+});
+}
+function click2() {
+    event.preventDefault();
+    location.href="check.jsp";
+}
+function click3() {
+    event.preventDefault();
+    location.href="settle.jsp";
+}
 function enter(x) {
     x.style.opacity = "0.5";
 }

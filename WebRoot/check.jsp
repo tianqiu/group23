@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>结算登记</title>
+	<title>技工检测</title>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/plug.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/customers.css"/>
-	<link rel="stylesheet" type="text/css" href="css/settle.css"/>
+	<link rel="stylesheet" type="text/css" href="css/report.css"/>
 </head>
 <body>
 <div class="none">
@@ -42,49 +42,91 @@
 
 
 
-
+<center><h2>技工你好，你已经接受了维修任务，可以对其进行维护。</h2></center>
 <div class = "info">
 			<form id="myform" action="servlet/Login" method="post">
 				<div class = "contant">
 				    <div class ="tips">
 					<p style="margin-top:6px;padding:0;">   *维修编号:</p>
 					</div>
-				<input type="text" placeholder="维修编号" id="ID"><br>
+				<input type="text" placeholder="维修编号" name="ID" id="ID"><br>
 			    </div>
-
+			
 				<div class = "contant">
 					<div class ="tips">
-						*维修费用:
+						维修人员:
 					</div>
-					<input type="text" placeholder="维修费用" id="laborcost"><br>
+					<input type="text" placeholder="维修人员"><br>
 				</div>
 				
 				<div class = "contant">
 					<div class ="tips">
-						*材料费用:
+						检测记录:
 					</div>
-					<input type="text" placeholder="材料费用" id='materialcost'><br>
+					<input type="text" placeholder="检测记录"><br>
 				</div>
-
 				<div class = "contant">
 					<div class ="tips">
-						保修承诺:
+						维修记录:
 					</div>
-					<input type="text" placeholder="保修承诺"><br>
+					<input type="text" placeholder="维修记录"><br>
 				</div>
-
 				<div class = "contant">
 					<div class ="tips">
-						注意事项:
+						维修检测时间:
 					</div>
-					<input type="text" placeholder="注意事项"><br>
+					<input type="text" placeholder="维修检测时间"><br>
 				</div>
+				</br>
+<center><h2>请输入需要的配件数量</h2></center>
+				<div class = "contant">
+					<div class ="tips">
+						备件1 A型号:
+					</div>
+					<input type="text" placeholder="数量，空则代表0"><br>
+				</div>
+				<div class = "contant">
+					<div class ="tips">
+						备件1 B型号:
+					</div>
+					<input type="text" placeholder="数量，空则代表0"><br>
+				</div>
+				<div class = "contant">
+					<div class ="tips">
+						备件2 A型号:
+					</div>
+					<input type="text" placeholder="数量，空则代表0"><br>
+				</div>
+				<div class = "contant">
+					<div class ="tips">
+						备件2 B型号:
+					</div>
+					<input type="text" placeholder="数量，空则代表0"><br>
+				</div>
+				<div class = "contant">
+					<div class ="tips">
+						备件3 A型号:
+					</div>
+					<input type="text" placeholder="数量，空则代表0"><br>
+				</div>
+				<div class = "contant">
+					<div class ="tips">
+						备件3 B型号:
+					</div>
+					<input type="text" placeholder="数量，空则代表0"><br>
+				</div>
+               <div class = "contant">
+			    <div class ="tips">
+			    </div>
+		        <button class = "bt" type="submit" onclick="isnull()">提交修改</button>
+	           </div>
 
                <div class = "contant">
 			    <div class ="tips">
 			    </div>
-		        <button class = "bt" type="submit" onclick="isnull()">提交</button>
+		        <button class = "bt" type="submit" onclick="isnull()">已完成任务</button>
 	           </div>
+				
 
 
 			</form>
@@ -102,15 +144,11 @@
 
 <script>
 function isnull() {
-event.preventDefault();
-if(document.getElementById('ID').value == '')
-    alert("维修编号不能为空！");
-else if(document.getElementById('laborcost').value == '')
-    alert("维修费用不能为空！");
-else if(document.getElementById('materialcost').value == '')
-    alert("材料费用不能为空！");
-else
-    location.href="printbill.jsp";
+	event.preventDefault();
+	if(document.getElementById('ID').value == '')
+    	alert("维修编号不能为空！");
+    else
+    	location.href="repair.jsp";
 }
 function enter(x) {
     x.style.opacity = "0.5";

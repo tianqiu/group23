@@ -50,7 +50,7 @@
 			<div class ="tips">
 			*身份证:
 			</div>
-			<input type="text" placeholder="身份证" ><br>
+			<input type="text" placeholder="身份证" id="idnum"><br>
 		</div>
 		
 		<div class = "contant">
@@ -119,7 +119,7 @@
 	    <div class = "contant">
 			<div class ="tips">
 			</div>
-		<button onclick="bbb()" class = "bt" type="submit">提交</button>
+		<button onclick="isnull()" class = "bt" type="submit">提交</button>
 	    </div>
 
 	</form>
@@ -131,9 +131,12 @@
 </html>
 
 <script>
-function bbb() {
+function isnull() {
 	event.preventDefault();
-    location.href="customers.jsp";
+	if(document.getElementById('idnum').value == '')
+    	alert("身份证不能为空！");
+    else
+    	location.href="customers.jsp";
 }
 function enter(x) {
     x.style.opacity = "0.5";

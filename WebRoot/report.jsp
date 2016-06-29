@@ -49,20 +49,20 @@
 				    <div class ="tips">
 					<p style="margin-top:6px;padding:0;">   *客户编号:</p>
 					</div>
-				<input type="text" placeholder="客户编号" name="ID" id="ID"><br>
+				<input type="text" placeholder="客户编号" id="ID"><br>
 			    </div>
 				
 				<div class = "contant">
 					<div class ="tips">
 					    *产品类型:
 					</div>
-					<select>
-						<option></option>
- 						<option>台式机</option>
-  						<option>笔记本</option>
-  						<option>投影仪</option>
- 						<option>打印机</option>
-						<option>其他</option>
+					<select id="producttype">
+						<option value=""></option>
+ 						<option value="1">台式机</option>
+  						<option value="2">笔记本</option>
+  						<option value="3">投影仪</option>
+ 						<option value="4">打印机</option>
+						<option value="5">其他</option>
 					</select><br>
 				</div>
 			
@@ -70,45 +70,45 @@
 					<div class ="tips">
 						机器品牌:
 					</div>
-					<input type="text" placeholder="机器品牌" name="password" id="password"><br>
+					<input type="text" placeholder="机器品牌"><br>
 				</div>
 				
 				<div class = "contant">
 					<div class ="tips">
 						机器型号:
 					</div>
-					<input type="text" placeholder="机器型号" name="password" id="password"><br>
+					<input type="text" placeholder="机器型号"><br>
 				</div>
 				
 				<div class = "contant">
 					<div class ="tips">
 						缺少零件:
 					</div>
-					<input type="text" placeholder="缺少零件" name="password" id="password"><br>
+					<input type="text" placeholder="缺少零件"><br>
 				</div>
 
 				<div class = "contant">
 					<div class ="tips">
 						系列号:
 					</div>
-					<input type="text" placeholder="系列号" name="password" id="password"><br>
+					<input type="text" placeholder="系列号"><br>
 				</div>
 
 				<div class = "contant">
 					<div class ="tips">
-						故障现象:
+						*故障现象:
 					</div>
-					<input type="text" placeholder="故障现象" name="password" id="password"><br>
+					<input type="text" placeholder="故障现象" id="faultsymptom"><br>
 				</div>
 
 				<div class = "contant">
 					<div class ="tips">
-						故障类型:
+						*故障类型:
 					</div>
-					<select>
-						<option value ="volvo"></option>
- 						<option value ="volvo">固定性故障</option>
-  						<option value ="saab">间隙性故障</option>
+					<select id="faulttype">
+						<option value =''></option>
+ 						<option value ="1">固定性故障</option>
+  						<option value ="2">间隙性故障</option>
 					</select><br>
 				</div>
 
@@ -208,10 +208,10 @@
 						报修状态:
 					</div>
 					<select>
-						<option value ="volvo"></option>
- 						<option value ="volvo">未打印</option>
-  						<option value ="saab">已打印</option>
-						<option value ="saab">提交</option>
+						<option value=""></option>
+ 						<option value="0">未打印</option>
+  						<option value="1">已打印</option>
+						<option value="2">提交</option>
 					</select><br>
 
 				</div>
@@ -220,7 +220,7 @@
                <div class = "contant">
 			    <div class ="tips">
 			    </div>
-		        <button class = "bt" type="submit" onclick="bbb()">提交</button>
+		        <button class = "bt" type="submit" onclick="isnull()">提交</button>
 	           </div>
 				
 
@@ -239,9 +239,18 @@
 </html>
 
 <script>
-function bbb() {
+function isnull() {
 	event.preventDefault();
-    location.href="print.jsp";
+    if(document.getElementById('ID').value == '')
+        alert("维修编号不能为空！");
+    else if(document.getElementById('producttype').value == '')
+        alert("产品类型不能为空！");
+    else if(document.getElementById('faulttype').value == '')
+        alert("故障类型不能为空！");
+    else if(document.getElementById('faultsymptom').value == '')
+        alert("故障现象不能为空！");
+    else
+    	location.href="repair.jsp";
 }
 function enter(x) {
     x.style.opacity = "0.5";

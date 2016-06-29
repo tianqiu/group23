@@ -16,8 +16,8 @@
 			<br><br><br><br><h1>Welcome</h1>
 			
 			<form  class="form" id="myform" action="servlet/Login" method="post">
-				<input type="text" placeholder="ID" name="ID" id="ID">
-				<input type="password" placeholder="Password" name="password" id="password">
+				<input type="text" placeholder="ID" id="ID">
+				<input type="password" placeholder="Password" id="password">
 				<br><button type="submit" id="login-button">Login</button>
 			</form>
 		</div>
@@ -42,18 +42,21 @@
 <script>
 $('#login-button').click(function (event) {
 	event.preventDefault();
-
+	if(document.getElementById('ID').value == '')
+    	alert("账号不能为空！");
+    else if(document.getElementById('password').value == '')
+    	alert("密码不能为空");
+    else
+    {
+    	$('form').fadeOut(500);
+		$('.wrapper').addClass('form-success');
+		//alert("${sessionScope.student.ID}");
+		setTimeout(function(){location.href="customers.jsp";},1000);
+    }
 
 
 	
-	    	$('form').fadeOut(500);
-			$('.wrapper').addClass('form-success');
-			//alert("${sessionScope.student.ID}");
-			setTimeout(function(){location.href="customers.jsp";},1000);
-
-
-
-
+/*	    
 	$.post("Login",
     {
       ID:$("#ID").val(),
@@ -75,7 +78,7 @@ $('#login-button').click(function (event) {
     	{
     		alert("密码错误!");
     	}
-    });
+    });*/
 });
 </script>
 
