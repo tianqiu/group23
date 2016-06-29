@@ -42,10 +42,6 @@
 </div>
 
 <div class="container">
-	<div class="leftpart">
-		&nbsp;
-	</div>
-	
 	<div class="centerpart">
 		<div class="outenterbuttons">
 			<div class="partname">
@@ -54,8 +50,20 @@
 			<div class="parttype">
 				A型
 			</div>
+			<div class="partprice">
+				五毛
+			</div>
 			<div class="remainpart">
 				剩余1件
+			</div>
+			<div class="entertime">
+				2016.6.28
+			</div>
+			<div class="dangerousnumber">
+				2件
+			</div>
+			<div class="status">
+				正常
 			</div>
 			<div class="outbutton">
 				<button class = "allot" type="submit" >出库</button>
@@ -65,14 +73,26 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
-			<div class="partname" >
+			<div class="partname">
 				备件1
 			</div>
 			<div class="parttype">
 				B型
 			</div>
+			<div class="partprice">
+				五毛
+			</div>
 			<div class="remainpart">
 				剩余1件
+			</div>
+			<div class="entertime">
+				2016.6.28
+			</div>
+			<div class="dangerousnumber">
+				2件
+			</div>
+			<div class="status">
+				正常
 			</div>
 			<div class="outbutton">
 				<button class = "allot" type="submit" >出库</button>
@@ -88,8 +108,20 @@
 			<div class="parttype">
 				A型
 			</div>
+			<div class="partprice">
+				五毛
+			</div>
 			<div class="remainpart">
 				剩余1件
+			</div>
+			<div class="entertime">
+				2016.6.28
+			</div>
+			<div class="dangerousnumber">
+				2件
+			</div>
+			<div class="status">
+				正常
 			</div>
 			<div class="outbutton">
 				<button class = "allot" type="submit" >出库</button>
@@ -105,8 +137,20 @@
 			<div class="parttype">
 				B型
 			</div>
+			<div class="partprice">
+				五毛
+			</div>
 			<div class="remainpart">
 				剩余1件
+			</div>
+			<div class="entertime">
+				2016.6.28
+			</div>
+			<div class="dangerousnumber">
+				2件
+			</div>
+			<div class="status">
+				正常
 			</div>
 			<div class="outbutton">
 				<button class = "allot" type="submit" >出库</button>
@@ -122,8 +166,20 @@
 			<div class="parttype">
 				A型
 			</div>
+			<div class="partprice">
+				五毛
+			</div>
 			<div class="remainpart">
 				剩余1件
+			</div>
+			<div class="entertime">
+				2016.6.28
+			</div>
+			<div class="dangerousnumber">
+				2件
+			</div>
+			<div class="status">
+				正常
 			</div>
 			<div class="outbutton">
 				<button class = "allot" type="submit" >出库</button>
@@ -139,8 +195,20 @@
 			<div class="parttype">
 				B型
 			</div>
+			<div class="partprice">
+				五毛
+			</div>
 			<div class="remainpart">
 				剩余1件
+			</div>
+			<div class="entertime">
+				2016.6.28
+			</div>
+			<div class="dangerousnumber">
+				2件
+			</div>
+			<div class="status">
+				正常
 			</div>
 			<div class="outbutton">
 				<button class = "allot" type="submit" >出库</button>
@@ -150,10 +218,6 @@
 			</div>
 		</div>		
 	</div>
-	
-	<div class="rightpart">		
-	 &nbsp;
-	</div>
 </div>
 
 	<div class="footer">
@@ -162,22 +226,19 @@
 		<div class="bill">
 <table width="100%" border="1" cellspacing="0" cellpadding="1">
 <tr>
-<td colspan="8">备件流水明细</td>
+<td colspan="7">备件流水明细</td>
 </tr>
 <tr>
-<td width="25%" colspan="2">出库入库</td><td width="25%" colspan="2">备件名称</td><td width="25%" colspan="2">型号</td><td width="25%" colspan="2">维修编号</td>
+<td width="14%">出库入库</td><td width="15%">备件名称</td><td width="14%">型号</td><td width="15%">维修编号</td><td width="14%">数量</td><td width="15%">单价</td><td width="13%">时间</td>
 </tr>
 <tr>
-<td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td>
-</tr>
+<td width="14%"></td><td width="15%" ></td><td width="14%"></td><td width="15%"></td><td width="14%"></td><td width="15%"></td><td width="13%"></td></tr>
 <tr>
-<td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td>
-</tr>
+<td width="14%"></td><td width="15%" ></td><td width="14%"></td><td width="15%"></td><td width="14%"></td><td width="15%"></td><td width="13%"></td></tr>
 <tr>
-<td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td>
-</tr>
+<td width="14%"></td><td width="15%" ></td><td width="14%"></td><td width="15%"></td><td width="14%"></td><td width="15%"></td><td width="13%"></td></tr>
 <tr>
-<td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td>
+<td width="14%"></td><td width="15%" ></td><td width="14%"></td><td width="15%"></td><td width="14%"></td><td width="15%"></td><td width="13%"></td>
 </tr>
 </table>
 </div>
