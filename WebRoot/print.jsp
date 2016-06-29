@@ -51,6 +51,9 @@
 <td width="25%">产品类型</td><td width="25%"></td><td width="25%">机器品牌</td><td width="25%"></td>
 </tr>
 <tr>
+<td width="25%">机器型号</td><td width="25%"></td><td width="25%">系列号</td><td width="25%"></td>
+</tr>
+<tr>
 <td width="25%">单位名称</td><td width="25%"></td><td width="25%">联系人</td><td width="25%"></td>
 </tr>
 <tr>
@@ -58,6 +61,12 @@
 </tr>
 <tr>
 <td colspan="4" style="text-align:left;"><p>dsfasfasfasdf第三方士大夫撒旦法士大夫士大夫士大夫士大夫撒旦法撒旦法士大夫撒旦法多舒服撒地方撒旦法撒旦法士大夫盛大发售的方式大sadfsadf</p></td>
+</tr>
+<tr>
+<td width="50%" colspan="2">产品类型</td><td width="50%" colspan="2">机器品牌</td>
+</tr>
+<tr>
+<td width="50%" colspan="2"></td><td width="50%" colspan="2"></td>
 </tr>
 </table>
 </div>

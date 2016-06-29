@@ -54,6 +54,9 @@
 <td width="25%" colspan="2">产品类型</td><td width="25%" colspan="2"></td><td width="25%" colspan="2">机器品牌</td><td width="25%" colspan="2"></td>
 </tr>
 <tr>
+<td width="25%" colspan="2">机器型号</td><td width="25%" colspan="2"></td><td width="25%" colspan="2">系列号</td><td width="25%" colspan="2"></td>
+</tr>
+<tr>
 <td width="25%" colspan="2">单位名称</td><td width="25%" colspan="2"></td><td width="25%" colspan="2">联系人</td><td width="25%" colspan="2"></td>
 </tr>
 <tr>
@@ -66,11 +69,20 @@
 <td colspan="8" style="text-align:left;"><p>dsfasfasfasdf第三方士大夫撒旦法士大夫士大夫士大夫士大夫撒旦法撒旦法士大夫撒旦法多舒服撒地方撒旦法撒旦法士大夫盛大发售的方式大sadfsadf</p></td>
 </tr>
 <tr>
-<td width="25%" colspan="2">部件名称</td><td width="25%" colspan="2"></td><td width="25%" colspan="2">型号</td><td width="25%" colspan="2"></td>
+<td width="50%" colspan="4">保修承诺</td><td width="50%" colspan="4">注意事项</td>
+</tr>
+<tr>
+<td width="50%" colspan="4"></td><td width="50%" colspan="4"></td>
+</tr>
+<tr>
+<td width="25%" colspan="2">部件名称</td><td width="25%" colspan="2">型号</td><td width="25%" colspan="2">数量</td><td width="25%" colspan="2">单价</td>
+</tr>
+<tr>
+<td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td><td width="25%" colspan="2"></td>
 </tr>
 </table>
 </div>
-<button class = "sendbill" type="submit" >确 定</button>
+<button class = "sendbill" type="submit" onclick="bbb()">确 定</button>
 
 
 
@@ -80,6 +92,10 @@
 </html>
 
 <script>
+function bbb() {
+	event.preventDefault();
+    location.href="repair.jsp";
+}
 function enter(x) {
     x.style.opacity = "0.5";
 }
