@@ -4,12 +4,11 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>报修管理</title>
+	<title>客户管理</title>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="css/plug.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/customers.css"/>
-	<link rel="stylesheet" type="text/css" href="css/report.css"/>
 </head>
 <body>
 <div class="none">
@@ -36,71 +35,56 @@
 		</ul>
 	</div>
 </div>
-<div class="none">
+
+
+<div class = "info" style="height:auto">
+	<form id="myform">
+		<div class = "contant">
+		    <div class ="tips">
+			<p style="margin-top:6px;padding:0;">   备件名称</p>
+			</div>
+		<input type="text"   ><br>
+	    </div>
+
+		<div class = "contant">
+			<div class ="tips">
+			备件型号：
+			</div>
+			<input type="text"  id="idnum"><br>
+		</div>
+		
+		<div class = "contant">
+			<div class ="tips">
+			备件数量：
+			</div>
+			<input type="text" ><br>
+		</div>
+
+		<div class = "contant">
+			<div class ="tips">
+			备件单价：
+			</div>
+			<input type="text" placeholder="电话" ><br>
+		</div>
+
+	    <div class = "contant">
+			<div class ="tips">
+			</div>
+		<button onclick="back()" class = "bt" type="submit">提交</button>
+	    </div>
+
+	</form>
 </div>
 
 
-
-
-
-<div class = "info">
-			<form id="myform">
-
-			   <div class = "contant">
-			    <div class ="tips">
-			    </div>
-		        <button class = "bt" type="submit" onclick="enterit()">备件入库</button>
-	           </div>
-
-	           <div class = "contant">
-			    <div class ="tips">
-			    </div>
-		        <button class = "bt" type="submit" onclick="out()">备件出库</button>
-	           </div>
-
-	           <div class = "contant">
-			    <div class ="tips">
-			    </div>
-		        <button class = "bt" type="submit" onclick="manage()">备件管理</button>
-	           </div>
-
-			   <div class = "contant">
-			    <div class ="tips">
-			    </div>
-		        <button class = "bt" type="submit" onclick="sparetable()">备件流水明细</button>
-	           </div>
-				
-
-
-			</form>
-</div>
-
-
-
-
-
-
-<div class="none">
-</div>
+<div class="none"></div>
 </body>
 </html>
 
 <script>
-function enterit(){
+function back() {
 	event.preventDefault();
-	location.href="enter.jsp";
-}
-function out() {
-	event.preventDefault();
-	location.href="spareout.jsp";
-}
-function sparetable(){
-	event.preventDefault();
-	location.href="sparetable.jsp";
-}
-function manage(){
-	event.preventDefault();
-	location.href="spareenter.jsp";
+	location.href="sparepart.jsp";
 }
 function enter(x) {
     x.style.opacity = "0.5";

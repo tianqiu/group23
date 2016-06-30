@@ -44,6 +44,9 @@
 	<div class="centerpart">
 		<div class="outenterbuttons">
 			<div class="partname" style="color:red">
+				维修单号
+			</div>
+			<div class="partname" style="color:red">
 				备件名称
 			</div>
 			<div class="parttype" style="color:red">
@@ -66,6 +69,9 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
+			<div class="partname" style="color:red">
+				1
+			</div>
 			<div class="partname">
 				备件1
 			</div>
@@ -92,6 +98,9 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
+			<div class="partname" style="color:red">
+				2
+			</div>
 			<div class="partname">
 				备件1
 			</div>
@@ -118,6 +127,9 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
+			<div class="partname" style="color:red">
+				3
+			</div>
 			<div class="partname">
 				备件2
 			</div>
@@ -144,6 +156,9 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
+			<div class="partname" style="color:red">
+				4
+			</div>
 			<div class="partname">
 				备件2
 			</div>
@@ -170,6 +185,9 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
+			<div class="partname" style="color:red">
+				5
+			</div>
 			<div class="partname">
 				备件3
 			</div>
@@ -196,6 +214,9 @@
 			</div>
 		</div>
 		<div class="outenterbuttons">
+			<div class="partname" style="color:red">
+				6
+			</div>
 			<div class="partname">
 				备件3
 			</div>
