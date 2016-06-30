@@ -250,7 +250,7 @@ function isnull() {
     else if(document.getElementById('faultsymptom').value == '')
         alert("故障现象不能为空！");
     else
-    	location.href="repair.jsp";
+    	location.href="print.jsp";
 }
 function enter(x) {
     x.style.opacity = "0.5";

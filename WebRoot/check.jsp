@@ -79,42 +79,37 @@
 				</div>
 				</br>
 <center><h2>请输入需要的配件数量</h2></center>
+
 				<div class = "contant">
 					<div class ="tips">
-						备件1 A型号:
+						备件名称:
 					</div>
-					<input type="text" placeholder="数量，空则代表0"><br>
+					<select>
+						<option value=""></option>
+ 						<option value="0">备件1</option>
+  						<option value="1">备件2</option>
+						<option value="2">备件3</option>
+					</select><br>
 				</div>
 				<div class = "contant">
 					<div class ="tips">
-						备件1 B型号:
+						备件型号:
 					</div>
-					<input type="text" placeholder="数量，空则代表0"><br>
+					<select>
+						<option value=""></option>
+ 						<option value="0">A</option>
+  						<option value="1">B</option>
+						<option value="2">C</option>
+					</select><br>
 				</div>
 				<div class = "contant">
 					<div class ="tips">
-						备件2 A型号:
+						数量:
 					</div>
-					<input type="text" placeholder="数量，空则代表0"><br>
+					<input type="text" placeholder="数量"><br>
 				</div>
-				<div class = "contant">
-					<div class ="tips">
-						备件2 B型号:
-					</div>
-					<input type="text" placeholder="数量，空则代表0"><br>
-				</div>
-				<div class = "contant">
-					<div class ="tips">
-						备件3 A型号:
-					</div>
-					<input type="text" placeholder="数量，空则代表0"><br>
-				</div>
-				<div class = "contant">
-					<div class ="tips">
-						备件3 B型号:
-					</div>
-					<input type="text" placeholder="数量，空则代表0"><br>
-				</div>
+
+
                <div class = "contant">
 			    <div class ="tips">
 			    </div>

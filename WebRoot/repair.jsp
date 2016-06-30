@@ -139,16 +139,4 @@ function aenter(x) {
 function aleave(x) {
    	x.style.color = "rgb(129,129,129)";
 }
-
-
-$("allot").click(function(){
-event.preventDefault();
-  layer.msg('你确定你很帅么？', {
-  time: 0 //不自动关闭
-  ,btn: ['必须啊', '丑到爆']
-});
-
-})
-
-
 </script>

@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>客户管理</title>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="js/layer.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="css/layer.css"/>
 	<link rel="stylesheet" type="text/css" href="css/plug.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/customers.css"/>
@@ -77,6 +79,10 @@
 	</form>
 </div>
 
+<div class="none" style=" height:10px;border-bottom: 3px solid rgb(0,0,0);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;">
+  </div>
 
 
 
@@ -84,46 +90,49 @@
 
 
 
-<div class="customer" onmouseenter="enter(this)" onmouseleave="leave(this)" onclick="location.href='customer.jsp'">
+<div class="customer">
 	<div class="customerblock">
 		<div class="customernum">01</div>
 		<div class="customername">asdasdas</div>
 		<div class="customeridnum">133131245679043345</div>
+		<button class = "change" type="submit" onclick="changebt()">修改</button>
+		<button class = "delete" type="submit" onclick="deletebt()">删除</button>
 	</div>
 </div>
-<div class="customer" onmouseenter="enter(this)" onmouseleave="leave(this)" onclick="location.href='customer.jsp'">
+<div class="customer">
 	<div class="customerblock">
-		<div class="customernum">02</div>
+		<div class="customernum">01</div>
 		<div class="customername">asdasdas</div>
 		<div class="customeridnum">133131245679043345</div>
+		<button class = "change" type="submit" onclick="changebt()">修改</button>
+		<button class = "delete" type="submit" onclick="deletebt()">删除</button>
 	</div>
 </div>
-<div class="customer" onmouseenter="enter(this)" onmouseleave="leave(this)" onclick="location.href='customer.jsp'">
+<div class="customer">
 	<div class="customerblock">
-		<div class="customernum">03</div>
+		<div class="customernum">01</div>
 		<div class="customername">asdasdas</div>
 		<div class="customeridnum">133131245679043345</div>
+		<button class = "change" type="submit" onclick="changebt()">修改</button>
+		<button class = "delete" type="submit" onclick="deletebt()">删除</button>
 	</div>
 </div>
-<div class="customer" onmouseenter="enter(this)" onmouseleave="leave(this)" onclick="location.href='customer.jsp'">
+<div class="customer">
 	<div class="customerblock">
-		<div class="customernum">04</div>
+		<div class="customernum">01</div>
 		<div class="customername">asdasdas</div>
 		<div class="customeridnum">133131245679043345</div>
+		<button class = "change" type="submit" onclick="changebt()">修改</button>
+		<button class = "delete" type="submit" onclick="deletebt()">删除</button>
 	</div>
 </div>
-<div class="customer" onmouseenter="enter(this)" onmouseleave="leave(this)" onclick="location.href='customer.jsp'">
+<div class="customer">
 	<div class="customerblock">
-		<div class="customernum">05</div>
+		<div class="customernum">01</div>
 		<div class="customername">asdasdas</div>
 		<div class="customeridnum">133131245679043345</div>
-	</div>
-</div>
-<div class="customer" onmouseenter="enter(this)" onmouseleave="leave(this)" onclick="location.href='customer.jsp'">
-	<div class="customerblock">
-		<div class="customernum">06</div>
-		<div class="customername">asdasdas</div>
-		<div class="customeridnum">133131245679043345</div>
+		<button class = "change" type="submit" onclick="changebt()">修改</button>
+		<button class = "delete" type="submit" onclick="deletebt()">删除</button>
 	</div>
 </div>
 
@@ -137,6 +146,15 @@ function bbb() {
 	event.preventDefault();
     location.href="customer.jsp";
 }
+function changebt() {
+	event.preventDefault();
+    location.href="customer.jsp";
+}
+
+function deletebt() {
+	confirm("确定要删除吗？");
+}
+
 function enter(x) {
     x.style.opacity = "0.5";
 }
