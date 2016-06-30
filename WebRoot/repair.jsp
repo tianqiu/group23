@@ -113,11 +113,8 @@
 
 <script>
 function click1() {
-layer.msg('分配给谁？', {
-  time: 0 //不自动关闭
-  ,icon:1
-  ,btn: ['取消','技工1', '技工2', '技工3', '技工4', '技工5']
-});
+event.preventDefault();
+    location.href="distribution.jsp";
 }
 function click2() {
     event.preventDefault();
